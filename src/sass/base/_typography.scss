@@ -67,9 +67,9 @@ h1:hover {
     font-variation-settings: "wght" 900, "opsz" 144, "soft" 0.4;
     background: linear-gradient(to right, #187f68, #2ccbad);
     -webkit-background-clip: text;
-    background-clip: text; /* Add standard background-clip */
-    color: transparent; /* Ensure color is transparent */
-    -webkit-text-fill-color: transparent; /* Webkit-specific */
+    background-clip: text;
+    color: transparent; 
+    -webkit-text-fill-color: transparent;
 }
 
 .header__title {
