@@ -1,15 +1,14 @@
 /* typography */
 @font-face {
     font-family: 'Fraunces';
-    src: url('/fonts/Fraunces-VariableFont_wght.ttf') format('truetype'),
-         url('/fonts/Fraunces-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('/src/fonts/Fraunces[SOFT\,WONK\,opsz\,wght].ttf') format('truetype');
     font-weight: 100 900;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'Fraunces';
-    src: url('/fonts/Fraunces-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('/src/fonts/Fraunces-Italic[SOFT\,WONK\,opsz\,wght].ttf') format('truetype');
     font-weight: 100 900;
     font-style: italic;
   }
@@ -26,3 +25,34 @@ $display-font: $font;
 $display-weight: 900;
 $display-spacing: 0.15em;
 $display-title-size: 4rem;
+
+body {
+    font-family: $font;
+    font-size: $body-font-size;
+    font-weight: $body-font-weight;
+    line-height: 1.6;
+    font-variation-settings: 'wght' 350, 'opsz' 14, 'soft' 0.2, 'wonk' 0;
+  }
+
+h1 {
+    font-family: $display-font;
+    font-size: $display-title-size;
+    font-weight: $display-weight;
+    letter-spacing: $display-spacing;
+    font-variation-settings: 'wght' 900, 'opsz' 32, 'soft' 0.4, 'wonk' 0.1; // Customize these values
+  }
+  
+  p {
+    font-family: $font;
+    font-size: 1rem;
+    line-height: 1.8;
+    font-variation-settings: 'wght' 350, 'opsz' 16, 'soft' 0.1, 'wonk' 0;
+  }
+  
+  p.italic {
+    font-family: $font;
+    font-style: italic;
+    font-weight: $body-italic-weight;
+    font-variation-settings: 'wght' 100, 'opsz' 16, 'soft' 0.3, 'wonk' 0.5; // Wonky effect here for italics
+  }
+  
