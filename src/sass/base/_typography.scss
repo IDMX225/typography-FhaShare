@@ -57,10 +57,11 @@ h1:hover {
     font-size: 1rem;
     line-height: 1.5;
     font-variation-settings: 'wght' 400, 'opsz' 9, 'soft' 0.1, 'wonk' 0;
+    transition: font-variation-settings 500ms;
 }
 
 .header__desc:hover {
-    font-variation-settings:'wght' 100, 'opsz' 9, 'soft' 0;
+    font-variation-settings:'wght' 100, 'opsz' 9, 'soft' 0, 'wonk' 0;
   }
 
 .header__desc--first {
@@ -73,5 +74,5 @@ h1:hover {
 }
 
 .header__desc--first:hover {
-    font-variation-settings:'wght' 400, 'opsz' 80, 'soft' 0, 'wonk' 0.8;
+    font-variation-settings:'wght' 400, 'opsz' 80, 'soft' 0, 'wonk' 0;
   }
