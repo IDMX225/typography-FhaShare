@@ -45,7 +45,7 @@ h1 {
     font-weight: $display-weight;
     letter-spacing: $display-spacing;
     font-variation-settings: "MORF" 0, "SHLN" 0;
-    animation: textAnimate 10s ease-in-out infinite;
+    animation: textAnimate 8s ease-in-out infinite;
 }
 
 @keyframes textAnimate {
