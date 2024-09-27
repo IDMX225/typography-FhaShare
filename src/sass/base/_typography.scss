@@ -7,7 +7,7 @@
     font-display: swap;
   }
   
-  @font-face {
+@font-face {
     font-family: 'Fraunces';
     src: url('/fonts/Fraunces-Italic[SOFT,WONK,opsz,wght].ttf') format('truetype');
     font-weight: 100 900;
@@ -33,7 +33,7 @@ body {
     font-size: $body-font-size;
     font-weight: $body-font-weight;
     line-height: 1.5;
-  }
+}
 
 h1 {
     font-family: $display-font;
@@ -41,19 +41,19 @@ h1 {
     font-weight: $display-weight;
     letter-spacing: $display-spacing;
     font-variation-settings: 'wght' 900, 'opsz' 50, 'soft' 0.4, 'wonk' 0;
-  }
+}
   
-  p {
+p {
     font-family: $font;
     font-size: 1rem;
-    line-height: 1.8;
+    line-height: 1.5;
     font-variation-settings: 'wght' 400, 'opsz' 9, 'soft' 0.1, 'wonk' 0;
-  }
+}
   
-  p.italic {
+p.italic {
     font-family: $font;
     font-style: italic;
     font-weight: $body-italic-weight;
-    font-variation-settings: 'wght' 100, 'opsz' 140, 'soft' 0, 'wonk' 1;
-  }
+    font-variation-settings: 'wght' 100, 'opsz' 40, 'soft' 0, 'wonk' 1;
+}
   
