@@ -3,8 +3,8 @@
     font-family: 'Honk';
     src: url(../fonts/Honk-Regular-VariableFont_[MORF,SHLN].ttf) format('truetype');
     font-weight: 100 900;
-    font-style: italic;
-    font-display: swap;
+    font-style: normal;
+    font-size: larger;
   }
 
 @font-face {
@@ -12,7 +12,6 @@
     src: url(../fonts/Fraunces[SOFT,WONK,opsz,wght].ttf) format('truetype');
     font-weight: 100 900;
     font-style: normal;
-    font-display: swap;
   }
   
 @font-face {
@@ -20,7 +19,6 @@
     src: url(../fonts/Fraunces-Italic[SOFT,WONK,opsz,wght].ttf) format('truetype');
     font-weight: 100 900;
     font-style: italic;
-    font-display: swap;
   }
 
 $font: "Fraunces", serif;
@@ -45,7 +43,7 @@ body {
 
 h1 {
     font-family: 'Honk';
-    font-size: 150%;
+    font-size: 10rem;
     font-weight: $display-weight;
     letter-spacing: $display-spacing;
     font-variation-settings: "MORF" 0, "SHLN" 0;
@@ -94,5 +92,5 @@ h1:hover {
 }
 
 .header__desc--first:hover {
-    font-variation-settings:'wght' 400, 'opsz' 80, 'soft' 0, 'wonk' 0.8;
+    font-variation-settings:'wght' 400, 'opsz' 80, 'soft' 0, 'wonk' 0;
   }

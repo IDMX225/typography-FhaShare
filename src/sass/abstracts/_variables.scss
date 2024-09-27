@@ -2,7 +2,7 @@
 
 @use "./functions" as func;
 
-$bg-color: aliceblue;
+$bg-color: rgb(252, 248, 226);
 $bg-dark: func.shade($bg-color, 25%);
 $bg-very-dark: func.shade($bg-color, 50%);
 $bg-light: func.tint($bg-color, 25%);
