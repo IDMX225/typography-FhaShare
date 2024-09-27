@@ -4,29 +4,28 @@
     src: url(../fonts/Honk-Regular-VariableFont_[MORF,SHLN].ttf) format('truetype');
     font-weight: 100 900;
     font-style: normal;
-    font-size: 8rem;
-  }
+}
 
 @font-face {
     font-family: 'Fraunces';
     src: url(../fonts/Fraunces[SOFT,WONK,opsz,wght].ttf) format('truetype');
     font-weight: 100 900;
     font-style: normal;
-  }
-  
+}
+
 @font-face {
     font-family: 'Fraunces';
     src: url(../fonts/Fraunces-Italic[SOFT,WONK,opsz,wght].ttf) format('truetype');
     font-weight: 100 900;
     font-style: italic;
-  }
+}
 
 $font: "Fraunces", serif;
 
 // body font styling vars
 $body-font-size: 120%;
-$body-font-weight: 350;
-$body-italic-weight: 100;
+$body-font-weight: 400; 
+$body-italic-weight: 400; 
 
 // display font styling vars
 $display-font: $font;
@@ -65,10 +64,12 @@ h1:hover {
     font-family: $font;
     font-size: 5rem;
     letter-spacing: 0.5em;
-    font-variation-settings: "wght" 900, "opsz" 144, "soft" 0.4, "wonk" 0, "WONK" 0, "SOFT" 0;
+    font-variation-settings: "wght" 900, "opsz" 144, "soft" 0.4;
     background: linear-gradient(to right, #187f68, #2ccbad);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text; /* Add standard background-clip */
+    color: transparent; /* Ensure color is transparent */
+    -webkit-text-fill-color: transparent; /* Webkit-specific */
 }
 
 .header__title {
@@ -82,8 +83,8 @@ h1:hover {
 }
 
 .header__desc:hover {
-    font-variation-settings:'wght' 400, 'opsz' 9, 'soft' 0,'wonk' 0;
-  }
+    font-variation-settings: 'wght' 400, 'opsz' 9, 'soft' 0, 'wonk' 0;
+}
 
 .header__desc--first {
     font-family: $font;
@@ -93,5 +94,5 @@ h1:hover {
 }
 
 .header__desc--first:hover {
-    font-variation-settings:'wght' 400, 'opsz' 80, 'soft' 0, 'wonk' 0;
-  }
+    font-variation-settings: 'wght' 400, 'opsz' 80, 'soft' 0, 'wonk' 0;
+}
