@@ -69,10 +69,10 @@ h1:hover {
     font-family: $font;
     font-style: italic;
     letter-spacing: 0.15em;
-    font-variation-settings: 'wght' 100, 'opsz' 80, 'soft' 0, 'wonk' 0;
+    font-variation-settings: 'wght' 100, 'opsz' 80, 'soft' 0, 'wonk' 1;
     transition: font-variation-settings 500ms, letter-spacing 500ms;
 }
 
 .header__desc--first:hover {
-    font-variation-settings: 'wght' 400, 'opsz' 80, 'soft' 0, 'wonk' 1;
+    font-variation-settings: 'wght' 400, 'opsz' 80, 'soft' 0, 'wonk' 0;
 }
