@@ -46,16 +46,19 @@ h1 {
 
 h1:hover {
   letter-spacing: 0.5em;
-  font-variation-settings: "wght" 900, "opsz" 144, "soft" 0.4, "wonk" 0, "WONK" 0, "SOFT" 0;
+  font-variation-settings: "wght" 900, "opsz" 144, "soft" 0.4;
   background: linear-gradient(to right, #187f68, #2ccbad);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .header__desc {
     font-family: $font;
     line-height: 1.5;
     font-variation-settings: 'wght' 400, 'opsz' 9, 'soft' 0.1, 'wonk' 0;
+    transition: font-variation-settings 500ms;
 }
 
 .header__desc:hover {
@@ -72,4 +75,4 @@ h1:hover {
 
 .header__desc--first:hover {
     font-variation-settings:'wght' 400, 'opsz' 80, 'soft' 0, 'wonk' 0;
-  }
+}
