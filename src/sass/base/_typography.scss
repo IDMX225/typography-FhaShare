@@ -54,24 +54,22 @@ h1:hover {
 
 .header__desc {
     font-family: $font;
-    font-size: 1rem;
     line-height: 1.5;
     font-variation-settings: 'wght' 400, 'opsz' 9, 'soft' 0.1, 'wonk' 0;
 }
 
 .header__desc:hover {
-    font-variation-settings:'wght' 100, 'opsz' 9, 'soft' 0;
+    font-variation-settings:'wght' 100, 'opsz' 9, 'soft' 0, 'wonk' 0;
   }
 
 .header__desc--first {
     font-family: $font;
     font-style: italic;
-    font-weight: 100;
     letter-spacing: 0.15em;
     font-variation-settings: 'wght' 100, 'opsz' 80, 'soft' 0, 'wonk' 1;
     transition: font-variation-settings 500ms;
 }
 
 .header__desc--first:hover {
-    font-variation-settings:'wght' 400, 'opsz' 80, 'soft' 0, 'wonk' 0.8;
+    font-variation-settings:'wght' 400, 'opsz' 80, 'soft' 0, 'wonk' 0;
   }
