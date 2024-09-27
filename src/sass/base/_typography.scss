@@ -45,27 +45,43 @@ body {
 
 h1 {
     font-family: 'Honk';
-    font-size: $display-title-size;
+    font-size: 150%;
     font-weight: $display-weight;
     letter-spacing: $display-spacing;
-    font-variation-settings: "MORF" 15, "SHLN" 50;
-    transition: font-variation-settings 500ms;
+    font-variation-settings: "MORF" 0, "SHLN" 0;
+    animation: textAnimate 10s ease-in-out infinite;
+}
+
+@keyframes textAnimate {
+    0% {
+        font-variation-settings: "MORF" 0, "SHLN" 0;
+    }
+    50% {
+        font-variation-settings: "MORF" 20, "SHLN" 50;
+    }
+    100% {
+        font-variation-settings: "MORF" 45, "SHLN" 100;
+    }
 }
 
 h1:hover {
-  letter-spacing: 0.5em;
-  font-variation-settings: "MORF" 45, "SHLN" 100;
+    font-family: $font;
+    letter-spacing: 0.5em;
+    font-variation-settings: "wght" 900, "opsz" 144, "soft" 0.4, "wonk" 0, "WONK" 0, "SOFT" 0;
+    background: linear-gradient(to right, #187f68, #2ccbad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 }
 
 .header__desc {
     font-family: $font;
     font-size: 1rem;
     line-height: 1.5;
-    font-variation-settings: 'wght' 400, 'opsz' 9, 'soft' 0.1, 'wonk' 0;
+    font-variation-settings: 'wght' 100, 'opsz' 9, 'soft' 0.1, 'wonk' 0;
 }
 
 .header__desc:hover {
-    font-variation-settings:'wght' 100, 'opsz' 9, 'soft' 0;
+    font-variation-settings:'wght' 400, 'opsz' 9, 'soft' 0,'wonk' 0;
   }
 
 .header__desc--first {
