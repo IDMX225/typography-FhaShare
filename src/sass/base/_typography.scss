@@ -4,7 +4,7 @@
     src: url(../fonts/Honk-Regular-VariableFont_[MORF,SHLN].ttf) format('truetype');
     font-weight: 100 900;
     font-style: normal;
-    font-size: larger;
+    font-size: 8rem;
   }
 
 @font-face {
@@ -43,7 +43,6 @@ body {
 
 h1 {
     font-family: 'Honk';
-    font-size: 10rem;
     font-weight: $display-weight;
     letter-spacing: $display-spacing;
     font-variation-settings: "MORF" 0, "SHLN" 0;
@@ -69,6 +68,10 @@ h1:hover {
     background: linear-gradient(to right, #187f68, #2ccbad);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+}
+
+.header__title {
+    font-size: 8rem;
 }
 
 .header__desc {
